@@ -59,10 +59,8 @@ header:hover{
 }
 @keyframes health {
     from {
-
         background-color: chartreuse;
         top: 50px;
-
     }
     to{
         background-color: rgb(30, 114, 210);
