@@ -23,15 +23,20 @@ header:hover{
 .page{
     position: relative;
     top: 70px;
-    height: 200vh;
+    height: 200px;
 }
 .text{
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 72px;
-    text-transform: uppercase;
-    color: red;
+    left: 20%;
+    transform: translateX(-30%);
+    font-size: 55px;
+    text-transform: unset;
+    text-align: left;
+    color:red;
+    animation-name: health;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
 }
 .logo{
     position: absolute;
@@ -39,16 +44,28 @@ header:hover{
     transform: translate(30%, 30%);
     transition: all 0.2s linear;
     animation-name: beat;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     opacity: 0.5;
 }
 @keyframes beat {
     from {
-        height: 300px;
+        height: 200px;
     }
     to{
-        height: 600px;
+        height: 400px;
+    }
+}
+@keyframes health {
+    from {
+
+        background-color: chartreuse;
+        top: 50px;
+
+    }
+    to{
+        background-color: rgb(30, 114, 210);
+        top: 350px;
     }
 }
